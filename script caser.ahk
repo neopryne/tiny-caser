@@ -1,7 +1,4 @@
-﻿;This will overwrite your clipboard when you use it... uh, just a sec, saving previous contents.
-
-
-CaseStored := 1
+﻿CaseStored := 1
 
 Ctrl & PgUp::
 CaseStored := CaseStored  = 2 ? 1 : 2
@@ -11,6 +8,9 @@ Ctrl & PgDn::
 CaseStored := CaseStored  = 0 ? 1 : 0
 return
 
+~Capslock::
+CaseStored := 1
+return
 
 #If (CaseStored = 0)
 a::ᴀ
